@@ -27,83 +27,85 @@ span {
 .container p {
     display: flex;
     justify-content: space-between;
-    /* Espaciado entre los elementos */
-
     margin: 0;
     padding: 10px 1px;
-    /* Espaciado vertical entre las filas */
 }
 
 
 .container p.line {
     border-bottom: 1px solid #000;
-    /* Establece un borde inferior de 1px de espesor y color negro */
-
-
 }
 
-.abajo {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 530px;
-    margin-right: 530px;
-}
-.img{
-    width: 72px;
-    height: 72px;
-    border-radius: 8px; 
-}
-.logo{
+    .abajo {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 530px;
+        margin-right: 530px;
+    }
+
+    .img {
+        width: 72px;
+        height: 72px;
+        border-radius: 8px;
+    }
+
+    .logo {
         width: 130.17px;
-}
+    }
 
-.user-profile {
-    display: flex;
-    align-items: center;
-}
+    .user-profile {
+        display: flex;
+        align-items: center;
+    }
 
-.profile-picture {
-    width: 32px;
-    height: 32px; 
-    border-radius: 8px; 
-    margin-right: 10px; 
-}
+    .profile-picture {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        margin-right: 10px;
+    }
 
-.user-name {
-    font-size: 18px;
-    font-weight: bold;
-}
-.arriba{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 130px;
-    margin-right: 130px;
-}
-.logout{
-    display: flex;
-    justify-content: space-between;
-    margin-left: 1490px;
-   
-}
-.image-container {
-    display: flex; /* Utiliza flexbox para alinear elementos horizontalmente */
-    align-items: center; /* Centra verticalmente los elementos */
-    gap: 300px; /* Espacio entre la imagen y el texto (ajusta según tus necesidades) */
-}
-.sub {
-    display: flex;
-    flex-direction: column; /* Coloca los elementos en una columna */
-}
+    .user-name {
+        font-size: 18px;
+        font-weight: bold;
+    }
 
-h3, p, .bttn {
-    margin: 0; /* Elimina el margen por defecto de los elementos */
-}
+    .arriba {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 130px;
+        margin-right: 130px;
+    }
 
-.bttn {
-    align-self: flex-end; 
-    border-radius: 12px;
-    width: 95.34px;
-    height: 38px;
-    margin-top: -42px;
-    background: transparent;
-}
+    .logout {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 1490px;
+
+    }
+
+    .image-container {
+        display: flex;
+        align-items: center;
+        gap: 300px;
+    }
+
+    .sub {
+        display: flex;
+        flex-direction: column;
+    }
+
+    h3,
+    p,
+    .bttn {
+        margin: 0;
+    }
+
+    .bttn {
+        align-self: flex-end;
+        border-radius: 12px;
+        width: 95.34px;
+        height: 38px;
+        margin-top: -42px;
+        background: transparent;
+    }

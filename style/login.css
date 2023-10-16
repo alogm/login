@@ -63,11 +63,13 @@ section {
     border-radius: 8px;
     cursor: pointer;
 }
+
 .submit:hover {
-    background-color: #270adf; /* Cambia el color de fondo al pasar el cursor */
+    background-color: #270adf;
 }
+
 .submit:active {
-    background-color: #750071; /* Cambia el color de fondo cuando se presiona */
+    background-color: #750071;
 }
 
 .bttn {
@@ -93,6 +95,7 @@ section {
     margin-left: 630px;
     margin-right: 630px;
 }
-.img{
+
+.img {
     width: 130.17px;
 }

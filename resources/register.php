@@ -5,28 +5,25 @@ if (isset($_POST['Email'], $_POST['Contrasena'], $_POST['Name'], $_POST['Bio'], 
     $Name = $_POST['Name'];
     $Bio = $_POST['Bio'];
     $Phone = $_POST['Phone'];
-    $hashed_password = password_hash($Contrasena, PASSWORD_BCRYPT);
+    $pass = password_hash($Contrasena, PASSWORD_BCRYPT);
 
-    // Verificamos si se cargó una imagen
     if (isset($_FILES['Photo'])) {
         $targetDirectory = "../imag/"; 
         $targetFile = $targetDirectory . basename($_FILES['Photo']['name']);
 
-        // Verificamos si la imagen se cargó correctamente
         if (move_uploaded_file($_FILES['Photo']['tmp_name'], $targetFile)) {
-            // La imagen se cargó correctamente, ahora puedes guardar el nombre del archivo en la base de datos
             require_once($_SERVER["DOCUMENT_ROOT"] . "../conec_base/database.php");
 
-            $stmt = $mysqli->prepare("INSERT INTO login_db (Email, Contrasena, Photo, Name, Bio, Phone) VALUES (?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param("ssssss", $Email, $hashed_password, $_FILES['Photo']['name'], $Name, $Bio, $Phone);
+            $open = $mysqli->prepare("INSERT INTO login_db (Email, Contrasena, Photo, Name, Bio, Phone) VALUES (?, ?, ?, ?, ?, ?)");
+            $open->bind_param("ssssss", $Email, $pass, $_FILES['Photo']['name'], $Name, $Bio, $Phone);
 
-            if ($stmt->execute()) {
+            if ($open->execute()) {
                 header("Location: ../views/login.php");
             } else {
                 echo "Error al registrar el usuario.";
             }
 
-            $stmt->close();
+            $open->close();
             $mysqli->close();
         } else {
             header("location:/manejo_errores/cargar_img.php");

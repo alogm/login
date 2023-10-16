@@ -15,7 +15,7 @@
         <img src="/assets/devchallenges.svg" alt="" class="img">
         <h1>Join thousands of learners from around the world</h1>
         <p>Master web development by making real-life projects. There are multiple paths for you to choose</p>
-        
+
         <form method="post" action="../resources/index.php">
             <div class="input-container">
                 <input type="email" name="Email" placeholder="Email" required>

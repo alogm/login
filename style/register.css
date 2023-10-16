@@ -12,18 +12,20 @@ section {
     margin-top: 3%;
     padding: 15px;
 }
-.input{
+
+.input {
     width: 416.93px;
     height: 40px;
-    border-radius: 8px; 
-    border: 1px solid rgb(170, 170, 170); 
+    border-radius: 8px;
+    border: 1px solid rgb(170, 170, 170);
     margin-right: 200px;
 }
-.bio{
+
+.bio {
     width: 416.93px;
     height: 90px;
     border-radius: 8px;
-    resize: none;   
+    resize: none;
 }
 
 
@@ -38,29 +40,36 @@ section {
     cursor: pointer;
 
 }
+
 .submit:hover {
-    background-color: #270adf; /* Cambia el color de fondo al pasar el cursor */
+    background-color: #270adf;
 }
+
 .submit:active {
-    background-color: #301e30; /* Cambia el color de fondo cuando se presiona */
+    background-color: #301e30;
 }
-h6
-{
+
+h6 {
     margin-bottom: 1px;
 }
-input, textarea{
+
+input,
+textarea {
     margin-top: 2px;
 }
+
 .abajo {
     display: flex;
     justify-content: space-between;
     margin-left: 430px;
     margin-right: 430px;
 }
-.logo{
+
+.logo {
     width: 130.17px;
 }
-button{
+
+button {
     width: 108px;
     height: 28px;
     border-radius: 8px;
@@ -68,9 +77,11 @@ button{
     color: white;
     border: none;
 }
+
 button:hover {
-    background-color: #270adf; /* Cambia el color de fondo al pasar el cursor */
+    background-color: #270adf;
 }
+
 button:active {
-    background-color: #301e30; /* Cambia el color de fondo cuando se presiona */
+    background-color: #301e30;
 }
