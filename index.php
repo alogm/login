@@ -11,6 +11,19 @@
 </head>
 
 <body>
+
+    <button id="dark-mode">Dark Mode</button>
+
+    <script>
+    const darkModeToggle = document.getElementById('dark-mode');
+    const body = document.body;
+
+    function toggleDark() {
+        body.classList.toggle('dark-mode');
+    }
+    darkModeToggle.addEventListener('click', toggleDark);
+    </script>
+
     <section>
         <img src="/assets/devchallenges.svg" alt="" class="img">
         <h1>Join thousands of learners from around the world</h1>
